@@ -1,5 +1,5 @@
 import axios from "axios";
 
 export default axios.create({
-  baseURL: "http://starlord.hackerearth.com",
+  baseURL: "https://starlord.hackerearth.com",
 });
