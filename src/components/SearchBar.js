@@ -59,7 +59,11 @@ class SearchBar extends React.Component {
     });
 
     const renderPlatforms = this.props.platformList.map((platform) => {
-      return <option value={platform}>{platform}</option>;
+      return (
+        <option value={platform} key={platform}>
+          {platform}
+        </option>
+      );
     });
 
     return (
