@@ -35,8 +35,9 @@ class App extends React.Component {
 
   setInitialState = async () => {
     const headers = {
-      "Access-Control-Allow-Origin": "*",
-      "Access-Control-Allow-Methods": "*",
+      "Access-Control-Allow-Origin":
+        "Origin, X-Requested-With, Content-Type, Accept",
+      "Access-Control-Allow-Methods": "GET, POST, PUT",
       "Access-Control-Allow-Origin": "*",
       server: "cloudflare-nginx",
     };
