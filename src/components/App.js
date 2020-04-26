@@ -34,7 +34,16 @@ class App extends React.Component {
   };
 
   setInitialState = async () => {
-    const response = await hackerearth.get("/gamesext");
+    const headers = {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "*",
+      "Access-Control-Allow-Origin": "*",
+      server: "cloudflare-nginx",
+    };
+    const response = await hackerearth.get("/gamesext", {
+      headers,
+    });
+
     //console.log(Object.values(response.data));
     this.setState({ games: Object.values(response.data) });
   };
