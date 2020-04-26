@@ -5,7 +5,7 @@ const Footer = (props) => {
   return (
     <div className="ui inverted vertical footer segment">
       <div className="ui center aligned container">
-        <Icon name="chess king" class="ui centered mini image" size="big" />
+        <Icon name="chess king" className="ui centered mini image" size="big" />
       </div>
       <br />
       <div className="ui center aligned container">
